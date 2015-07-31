@@ -1,0 +1,39 @@
+{
+  "name": "appenderapp",
+  "version": "1.0.0",
+  "description": "append google contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andles/AppenderApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andles/AppenderApp/issues"
+  },
+  "homepage": "https://github.com/andles/AppenderApp#readme",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "cors": "^2.7.1",
+    "ejs": "^2.3.2",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "google-contacts": "0.0.3",
+    "js2xmlparser": "^0.1.9",
+    "mandrill-api": "^1.0.45",
+    "mongoose": "^4.1.0",
+    "morgan": "^1.6.1",
+    "passport": "^0.2.2",
+    "passport-google-oauth": "^0.2.0",
+    "request": "^2.58.0",
+    "sendgrid": "^1.9.0",
+    "underscore": "^1.8.3"
+  }
+}

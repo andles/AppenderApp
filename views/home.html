@@ -1,0 +1,45 @@
+    <div>
+      <nav class="navbar navbar-grey" ng-controller="navCtrl">
+        <div class="container-fluid">
+          <div class="nav-header">
+            <a href="#/login" class="navbar-brand hidden-xs">Appender App</a>
+<!--             <ul class="nav navbar-nav">
+              <li class="text-center">
+                 <a href="getGoogleContacts()">Get Google Contacts</a>
+              </li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="text-center">
+                 <a href="/logout">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- contacts list container -->
+    <div class="container">
+      <div class="row panel panel-primary" ng-controller="collapseCtrl">
+        <div class="panel-heading">
+          <h2 class="panel-title">Appender App</h2>
+        </div>
+        <!--     contact list      -->
+        <div class="col-xs-6 panel-body">
+          <ul class="list-group">
+            <li class="list-group-item"><h4>Contacts:</h4>
+              <input class="form-control" placeholder="Seach Your Contacts" type="text" ng-model="searchText">
+              <contact class="list-group-item" ng-repeat="contact in contacts | orderBy: 'name' | filter: searchText "></contact>
+            </li>
+          </ul> 
+        </div>
+        <div class="col-xs-6 panel-body">
+          <ul class="list-group">
+            <li class="list-group-item"><h4>Requests:</h4>
+              <input class="form-control" placeholder="Seach Your Requests" type="text" ng-model="requestSearchText">
+              <request class="list-group-item" ng-repeat="request in requests | orderBy: 'name' | filter: requestSearchText "></request>
+            </li>
+<!--             <response ng-if="!ifValue"></response> -->
+          </ul> 
+        </div>
+      </div>
+    </div>

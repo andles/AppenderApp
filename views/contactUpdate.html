@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="page-header text-center">
+    <h1><span class="fa fa-envelope"></span> Welcome {{name}}</h1>
+    <h3>Please update your address info below</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+          <div class="panel-heading">Update Your Address Here</div>
+           <!--  <div class="well">
+              <p type="text" ng-model="update.email">Email: {{toEmail}}</p>
+              Phone: <input type="text" ng-model="update.phone">
+            </div> -->
+            <div class="well">
+              Street: <input type="text" ng-model="update.street">
+              City: <input type="text" ng-model="update.city">
+              State: <input type="text" ng-model="update.state">
+              Zip: <input type="text" ng-model="update.zip">   
+            </div>
+            <div class="panel-footer">
+              <button ng-click="submitUpdate(update)">Submit</button>   
+            </div>
+          </div><br>
+      </div>
+    </div>
+  </div>
+</div>

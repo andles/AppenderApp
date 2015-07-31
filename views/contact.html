@@ -1,0 +1,22 @@
+<div>
+	<a class="list-group-item" ng-click="collapse($index)">{{contact.displayName}}</a>
+	<div collapse="!collapseArr[$index]">
+		<div class="well well-lg">
+      <div class="well">
+            Email: <input type="text" ng-model="contact.email">
+            Phone: <input type="text" ng-model="contact.phoneNumber">
+      </div>
+      <div class="well">
+        Street: <input type="text" ng-model="contact.address[0].street">
+        City: <input type="text" ng-model="contact.address[0].city">
+        State: <input type="text" ng-model="contact.address[0].state">
+        Zip: <input type="text" ng-model="contact.address[0].zip">   
+      </div>
+      <div class="panel-footer">
+        <button ng-click="updateContact(contact)">Update Contact</button>
+        <button ng-click="requestAddress(contact)">Request Address</button>
+        <button ng-click="removeContact(contact)">Remove Contact</button>   
+      </div>
+		</div> 
+	</div>
+</div>
